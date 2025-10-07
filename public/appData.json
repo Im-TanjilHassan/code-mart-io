@@ -1,0 +1,362 @@
+[
+  {
+    "id": 1,
+    "image": "https://unsplash.com/photos/icon-TZBoRaASr74",
+    "title": "TaskMaster",
+    "companyName": "NextGen Apps",
+    "description": "Smart to-do app that helps you plan, organize, and execute your daily goals with ease.",
+    "size": 25,
+    "reviews": 1042,
+    "ratingAvg": 4.5,
+    "downloads": 50000,
+    "ratings": [
+      { "name": "1 star", "count": 45 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 110 },
+      { "name": "4 star", "count": 320 },
+      { "name": "5 star", "count": 507 }
+    ]
+  },
+  {
+    "id": 2,
+    "image": "https://images.unsplash.com/photo-1551817958-20204c30b3c6?w=500",
+    "title": "FitTrack",
+    "companyName": "BodySync Ltd",
+    "description": "Fitness tracker that monitors your workouts, calories, and health stats in real time.",
+    "size": 38,
+    "reviews": 860,
+    "ratingAvg": 4.3,
+    "downloads": 67000,
+    "ratings": [
+      { "name": "1 star", "count": 42 },
+      { "name": "2 star", "count": 55 },
+      { "name": "3 star", "count": 125 },
+      { "name": "4 star", "count": 270 },
+      { "name": "5 star", "count": 368 }
+    ]
+  },
+  {
+    "id": 3,
+    "image": "https://images.unsplash.com/photo-1504707748692-419802cf939d?w=500",
+    "title": "PhotoBlend",
+    "companyName": "PixelCraft",
+    "description": "Blend, edit, and enhance photos with AI-powered tools and vibrant color filters.",
+    "size": 42,
+    "reviews": 2130,
+    "ratingAvg": 4.7,
+    "downloads": 150000,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 220 },
+      { "name": "4 star", "count": 480 },
+      { "name": "5 star", "count": 1290 }
+    ]
+  },
+  {
+    "id": 4,
+    "image": "https://images.unsplash.com/photo-1517430816045-df4b7de01f1a?w=500",
+    "title": "CodeHub",
+    "companyName": "DevSync",
+    "description": "A developer's playground for sharing, testing, and showcasing code projects instantly.",
+    "size": 19,
+    "reviews": 1400,
+    "ratingAvg": 4.8,
+    "downloads": 89000,
+    "ratings": [
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 45 },
+      { "name": "3 star", "count": 90 },
+      { "name": "4 star", "count": 320 },
+      { "name": "5 star", "count": 915 }
+    ]
+  },
+  {
+    "id": 5,
+    "image": "https://images.unsplash.com/photo-1611605698335-8b1569810432?w=500",
+    "title": "TuneWave",
+    "companyName": "SonicStream",
+    "description": "Stream unlimited songs and podcasts with a personalized AI recommendation engine.",
+    "size": 55,
+    "reviews": 870,
+    "ratingAvg": 4.4,
+    "downloads": 132000,
+    "ratings": [
+      { "name": "1 star", "count": 80 },
+      { "name": "2 star", "count": 65 },
+      { "name": "3 star", "count": 130 },
+      { "name": "4 star", "count": 280 },
+      { "name": "5 star", "count": 315 }
+    ]
+  },
+  {
+    "id": 6,
+    "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=500",
+    "title": "Chatly",
+    "companyName": "NextTalk",
+    "description": "Secure instant messaging app with voice, video, and file sharing in one place.",
+    "size": 48,
+    "reviews": 1990,
+    "ratingAvg": 4.6,
+    "downloads": 210000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 110 },
+      { "name": "3 star", "count": 180 },
+      { "name": "4 star", "count": 490 },
+      { "name": "5 star", "count": 1110 }
+    ]
+  },
+  {
+    "id": 7,
+    "image": "https://images.unsplash.com/photo-1611605698334-ff9e7a9b33f5?w=500",
+    "title": "ShopSmart",
+    "companyName": "MegaBuy",
+    "description": "Smart shopping app with live discounts, product comparison, and real-time deals.",
+    "size": 60,
+    "reviews": 1420,
+    "ratingAvg": 4.2,
+    "downloads": 98000,
+    "ratings": [
+      { "name": "1 star", "count": 85 },
+      { "name": "2 star", "count": 95 },
+      { "name": "3 star", "count": 210 },
+      { "name": "4 star", "count": 430 },
+      { "name": "5 star", "count": 600 }
+    ]
+  },
+  {
+    "id": 8,
+    "image": "https://images.unsplash.com/photo-1559056199-641a0ac8b55f?w=500",
+    "title": "Travelio",
+    "companyName": "TripVista",
+    "description": "Plan trips, book flights, and find the best hotel deals — all in one travel app.",
+    "size": 50,
+    "reviews": 1200,
+    "ratingAvg": 4.5,
+    "downloads": 88000,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 70 },
+      { "name": "3 star", "count": 140 },
+      { "name": "4 star", "count": 390 },
+      { "name": "5 star", "count": 540 }
+    ]
+  },
+  {
+    "id": 9,
+    "image": "https://images.unsplash.com/photo-1612831455543-b8b8b94997cd?w=500",
+    "title": "GameZone",
+    "companyName": "PlayVerse",
+    "description": "Discover trending mobile games, join tournaments, and share gameplay videos.",
+    "size": 70,
+    "reviews": 3100,
+    "ratingAvg": 4.8,
+    "downloads": 450000,
+    "ratings": [
+      { "name": "1 star", "count": 130 },
+      { "name": "2 star", "count": 110 },
+      { "name": "3 star", "count": 240 },
+      { "name": "4 star", "count": 620 },
+      { "name": "5 star", "count": 2000 }
+    ]
+  },
+  {
+    "id": 10,
+    "image": "https://images.unsplash.com/photo-1587574293340-e0011c41e9de?w=500",
+    "title": "EduLink",
+    "companyName": "BrightLearn",
+    "description": "Interactive learning app with quizzes, video lectures, and skill certifications.",
+    "size": 45,
+    "reviews": 860,
+    "ratingAvg": 4.3,
+    "downloads": 64000,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 120 },
+      { "name": "4 star", "count": 260 },
+      { "name": "5 star", "count": 380 }
+    ]
+  },
+  {
+    "id": 11,
+    "image": "https://images.unsplash.com/photo-1611605698232-6e3cf83a868c?w=500",
+    "title": "NoteX",
+    "companyName": "MindPad",
+    "description": "Minimalist note app that syncs your ideas across devices instantly and securely.",
+    "size": 18,
+    "reviews": 540,
+    "ratingAvg": 4.2,
+    "downloads": 30000,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 40 },
+      { "name": "3 star", "count": 100 },
+      { "name": "4 star", "count": 180 },
+      { "name": "5 star", "count": 200 }
+    ]
+  },
+  {
+    "id": 12,
+    "image": "https://images.unsplash.com/photo-1611605698234-c8d9d5b54679?w=500",
+    "title": "WalletPro",
+    "companyName": "SafePay",
+    "description": "Secure digital wallet for easy payments, bills, and money transfers worldwide.",
+    "size": 32,
+    "reviews": 1940,
+    "ratingAvg": 4.6,
+    "downloads": 176000,
+    "ratings": [
+      { "name": "1 star", "count": 90 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 160 },
+      { "name": "4 star", "count": 460 },
+      { "name": "5 star", "count": 1130 }
+    ]
+  },
+  {
+    "id": 13,
+    "image": "https://images.unsplash.com/photo-1509395176047-4a66953fd231?w=500",
+    "title": "WeatherCast",
+    "companyName": "SkyAlert",
+    "description": "Accurate weather forecasts, live radar, and storm alerts with modern UI.",
+    "size": 24,
+    "reviews": 670,
+    "ratingAvg": 4.1,
+    "downloads": 56000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 70 },
+      { "name": "3 star", "count": 130 },
+      { "name": "4 star", "count": 210 },
+      { "name": "5 star", "count": 210 }
+    ]
+  },
+  {
+    "id": 14,
+    "image": "https://images.unsplash.com/photo-1536148935331-408321065b18?w=500",
+    "title": "Readify",
+    "companyName": "BookHive",
+    "description": "Read and download your favorite books and audiobooks offline with one tap.",
+    "size": 41,
+    "reviews": 960,
+    "ratingAvg": 4.5,
+    "downloads": 83000,
+    "ratings": [
+      { "name": "1 star", "count": 55 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 160 },
+      { "name": "4 star", "count": 280 },
+      { "name": "5 star", "count": 385 }
+    ]
+  },
+  {
+    "id": 15,
+    "image": "https://images.unsplash.com/photo-1556742031-c6961e8560b0?w=500",
+    "title": "MealMate",
+    "companyName": "FoodFusion",
+    "description": "Recipe discovery app that personalizes meal ideas based on your taste.",
+    "size": 52,
+    "reviews": 1230,
+    "ratingAvg": 4.4,
+    "downloads": 92000,
+    "ratings": [
+      { "name": "1 star", "count": 65 },
+      { "name": "2 star", "count": 75 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 360 },
+      { "name": "5 star", "count": 580 }
+    ]
+  },
+  {
+    "id": 16,
+    "image": "https://images.unsplash.com/photo-1551817956-fd41b9e8b50a?w=500",
+    "title": "LangPro",
+    "companyName": "LinguaTech",
+    "description": "Language learning app with interactive lessons, speech recognition, and quizzes.",
+    "size": 36,
+    "reviews": 1130,
+    "ratingAvg": 4.6,
+    "downloads": 101000,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 120 },
+      { "name": "4 star", "count": 320 },
+      { "name": "5 star", "count": 590 }
+    ]
+  },
+  {
+    "id": 17,
+    "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=500",
+    "title": "CryptoBase",
+    "companyName": "CoinVault",
+    "description": "Track cryptocurrencies, get live updates, and analyze your investments securely.",
+    "size": 33,
+    "reviews": 2120,
+    "ratingAvg": 4.7,
+    "downloads": 240000,
+    "ratings": [
+      { "name": "1 star", "count": 90 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 190 },
+      { "name": "4 star", "count": 510 },
+      { "name": "5 star", "count": 1230 }
+    ]
+  },
+  {
+    "id": 18,
+    "image": "https://images.unsplash.com/photo-1551817958-53d51b601d1d?w=500",
+    "title": "SleepEase",
+    "companyName": "ZenCore",
+    "description": "Relaxation and sleep aid app with calming music, nature sounds, and sleep tracking.",
+    "size": 28,
+    "reviews": 990,
+    "ratingAvg": 4.4,
+    "downloads": 65000,
+    "ratings": [
+      { "name": "1 star", "count": 55 },
+      { "name": "2 star", "count": 70 },
+      { "name": "3 star", "count": 130 },
+      { "name": "4 star", "count": 290 },
+      { "name": "5 star", "count": 445 }
+    ]
+  },
+  {
+    "id": 19,
+    "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=500",
+    "title": "VisionEdit",
+    "companyName": "FrameLab",
+    "description": "Professional video editing app with filters, transitions, and AI background music.",
+    "size": 72,
+    "reviews": 2470,
+    "ratingAvg": 4.8,
+    "downloads": 300000,
+    "ratings": [
+      { "name": "1 star", "count": 110 },
+      { "name": "2 star", "count": 130 },
+      { "name": "3 star", "count": 220 },
+      { "name": "4 star", "count": 540 },
+      { "name": "5 star", "count": 1470 }
+    ]
+  },
+  {
+    "id": 20,
+    "image": "https://images.unsplash.com/photo-1612831455543-b8b8b94997cd?w=500",
+    "title": "MindZone",
+    "companyName": "FocusLabs",
+    "description": "Productivity app designed to boost focus, track habits, and reduce distractions.",
+    "size": 27,
+    "reviews": 1750,
+    "ratingAvg": 4.5,
+    "downloads": 118000,
+    "ratings": [
+      { "name": "1 star", "count": 75 },
+      { "name": "2 star", "count": 90 },
+      { "name": "3 star", "count": 160 },
+      { "name": "4 star", "count": 420 },
+      { "name": "5 star", "count": 1005 }
+    ]
+  }
+]
