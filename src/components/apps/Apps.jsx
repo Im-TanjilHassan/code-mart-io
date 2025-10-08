@@ -14,10 +14,9 @@ const Apps = ({ appsDataPromise }) => {
         app.title.toLowerCase().includes(inputValue.toLowerCase())
       );
       setApps(searchedApps);
-      }
-    else {
-        setApps(appData)
-      }
+    } else {
+      setApps(appData);
+    }
   };
 
   return (
@@ -31,7 +30,9 @@ const Apps = ({ appsDataPromise }) => {
         </p>
       </div>
       <div className="flex justify-between items-center mb-10">
-        <p className="text-md md:text-xl lg:text-xl font-bold">({appData.length})Apps Found</p>
+        <p className="text-md md:text-xl lg:text-xl font-bold">
+          ({apps.length})Apps Found
+        </p>
         <input
           onChange={handleSearch}
           type="text"
@@ -40,14 +41,27 @@ const Apps = ({ appsDataPromise }) => {
         />
         <CiSearch className="absolute text-orange-600 font-bold right-50 lg:right-83" />
       </div>
-      <div className="md:grid lg:grid grid-cols-4 gap-5 space-y-5 mb-8">
-        {apps.map((singleAppData) => (
-          <AppCard
-            key={singleAppData.id}
-            singleAppData={singleAppData}
-          ></AppCard>
-        ))}
-      </div>
+      {apps.length ? (
+        <div className="md:grid lg:grid grid-cols-4 gap-5 space-y-5 mb-8">
+          {apps.map((singleAppData) => (
+            <AppCard
+              key={singleAppData.id}
+              singleAppData={singleAppData}
+            ></AppCard>
+          ))}
+        </div>
+      ) : (
+        <div className="w-full flex justify-center items-center">
+          <div className="space-y-6 p-3">
+            <img src="/imges/App-Error.png" className="w-sm mx-auto" alt="" />
+            <h2 className="text-5xl font-bold">OPPS!!! NO APP FOUND</h2>
+            <p className="text-gray-500">
+              The App you are requesting is not found on our system. please try
+              another apps
+            </p>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

@@ -1,8 +1,10 @@
-import React, { use } from "react";
+import React, { use, useState } from "react";
 import { useParams } from "react-router";
 import RatingChart from "./ratingChart/RatingChart";
+import { toast } from "react-toastify";
 
 const AppDetail = ({ appsDataPromise }) => {
+  const [installed, setInstalled] = useState(false);
   const { id } = useParams();
   const allAppData = use(appsDataPromise);
   const singleAppData = allAppData.find(
@@ -18,7 +20,12 @@ const AppDetail = ({ appsDataPromise }) => {
     size,
     description,
     ratings,
-  } = singleAppData;
+    } = singleAppData;
+    
+    const handleInstallBtn = () => {
+        setInstalled(true);
+        toast.success("App Installed Successfully")
+    }
 
   return (
     <div className="mb-20 px-2 md:px-7 lg:px-10 space-y-10">
@@ -66,9 +73,21 @@ const AppDetail = ({ appsDataPromise }) => {
                 <p className="text-2xl font-bold">{reviews}K</p>
               </div>
             </div>
-            <button className="btn bg-gradient-to-r from-orange-800 to-orange-400 text-white font-bold">
-              Install Now ({size}MB)
-            </button>
+            {installed ? (
+              <button
+                disabled
+                className="btn bg-gradient-to-r from-orange-800 to-orange-400 text-white font-bold"
+              >
+                Installed
+              </button>
+            ) : (
+              <button
+                onClick={handleInstallBtn}
+                className="btn bg-gradient-to-r from-orange-800 to-orange-400 text-white font-bold"
+              >
+                Install Now ({size}MB)
+              </button>
+            )}
           </div>
         </div>
       </div>

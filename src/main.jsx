@@ -7,6 +7,8 @@ import Home from './components/home/Home.jsx'
 import Apps from './components/apps/Apps.jsx'
 import Installation from './components/installation/Installation.jsx'
 import AppDetail from './components/appDetail/AppDetail.jsx'
+import "react-toastify/dist/ReactToastify.css";
+
 
 const appsDataPromise = fetch("/appData.json").then(res => res.json())
 
