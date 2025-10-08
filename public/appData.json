@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "image": "https://unsplash.com/photos/icon-TZBoRaASr74",
+    "image": "https://plus.unsplash.com/premium_photo-1683309567810-4d232ee83d2f?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8dGFza3N8ZW58MHx8MHx8fDA%3D",
     "title": "TaskMaster",
     "companyName": "NextGen Apps",
     "description": "Smart to-do app that helps you plan, organize, and execute your daily goals with ease.",
@@ -19,7 +19,7 @@
   },
   {
     "id": 2,
-    "image": "https://images.unsplash.com/photo-1551817958-20204c30b3c6?w=500",
+    "image": "https://images.unsplash.com/photo-1483721310020-03333e577078?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "title": "FitTrack",
     "companyName": "BodySync Ltd",
     "description": "Fitness tracker that monitors your workouts, calories, and health stats in real time.",
@@ -55,7 +55,7 @@
   },
   {
     "id": 4,
-    "image": "https://images.unsplash.com/photo-1517430816045-df4b7de01f1a?w=500",
+    "image": "https://plus.unsplash.com/premium_photo-1720287601920-ee8c503af775?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "title": "CodeHub",
     "companyName": "DevSync",
     "description": "A developer's playground for sharing, testing, and showcasing code projects instantly.",
@@ -109,7 +109,7 @@
   },
   {
     "id": 7,
-    "image": "https://images.unsplash.com/photo-1611605698334-ff9e7a9b33f5?w=500",
+    "image": "https://images.unsplash.com/photo-1709916335779-e2b763a4a133?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "title": "ShopSmart",
     "companyName": "MegaBuy",
     "description": "Smart shopping app with live discounts, product comparison, and real-time deals.",
@@ -127,7 +127,7 @@
   },
   {
     "id": 8,
-    "image": "https://images.unsplash.com/photo-1559056199-641a0ac8b55f?w=500",
+    "image": "https://plus.unsplash.com/premium_photo-1681487906725-ecd65970ac66?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "title": "Travelio",
     "companyName": "TripVista",
     "description": "Plan trips, book flights, and find the best hotel deals — all in one travel app.",

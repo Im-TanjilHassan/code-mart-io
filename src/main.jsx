@@ -1,4 +1,4 @@
-import { StrictMode } from 'react'
+import { StrictMode, Suspense } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
@@ -6,6 +6,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router'
 import Home from './components/home/Home.jsx'
 import Apps from './components/apps/Apps.jsx'
 import Installation from './components/installation/Installation.jsx'
+
+const appsDataPromies = fetch("appData.json").then(res => res.json())
 
 const router = createBrowserRouter([
   {
@@ -15,7 +17,10 @@ const router = createBrowserRouter([
       {
         index: true,
         loader: () => fetch("appData.json"),
-        Component: Home
+        element: <Suspense fallback="Loading ...">
+          <Home appsDataPromies={appsDataPromies}></Home>
+        </Suspense>
+        // Component: Home
       },
       {
         path: 'apps',
