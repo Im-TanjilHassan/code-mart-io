@@ -6,8 +6,9 @@ import { createBrowserRouter, RouterProvider } from 'react-router'
 import Home from './components/home/Home.jsx'
 import Apps from './components/apps/Apps.jsx'
 import Installation from './components/installation/Installation.jsx'
+import AppDetail from './components/appDetail/AppDetail.jsx'
 
-const appsDataPromise = fetch("appData.json").then(res => res.json())
+const appsDataPromise = fetch("/appData.json").then(res => res.json())
 
 const router = createBrowserRouter([
   {
@@ -25,7 +26,7 @@ const router = createBrowserRouter([
         // Component: Home
       },
       {
-        path: "apps",
+        path: "/apps",
         element: (
           <Suspense fallback="Loading ...">
             <Apps appsDataPromise={appsDataPromise}></Apps>
@@ -33,8 +34,16 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: "installation",
+        path: "/installation",
         Component: Installation,
+      },
+      {
+        path: "/appDetail/:id",
+        element: (
+          <Suspense fallback="Loading ...">
+            <AppDetail appsDataPromise={appsDataPromise}></AppDetail>
+          </Suspense>
+        ),
       },
     ],
   },
