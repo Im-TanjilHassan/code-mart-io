@@ -7,32 +7,38 @@ import Home from './components/home/Home.jsx'
 import Apps from './components/apps/Apps.jsx'
 import Installation from './components/installation/Installation.jsx'
 
-const appsDataPromies = fetch("appData.json").then(res => res.json())
+const appsDataPromise = fetch("appData.json").then(res => res.json())
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: "/",
     Component: App,
     children: [
       {
         index: true,
         loader: () => fetch("appData.json"),
-        element: <Suspense fallback="Loading ...">
-          <Home appsDataPromies={appsDataPromies}></Home>
-        </Suspense>
+        element: (
+          <Suspense fallback="Loading ...">
+            <Home appsDataPromise={appsDataPromise}></Home>
+          </Suspense>
+        ),
         // Component: Home
       },
       {
-        path: 'apps',
-        Component: Apps
+        path: "apps",
+        element: (
+          <Suspense fallback="Loading ...">
+            <Apps appsDataPromise={appsDataPromise}></Apps>
+          </Suspense>
+        ),
       },
       {
-        path: 'installation',
-        Component: Installation
-      }
-    ]
-  }
-])
+        path: "installation",
+        Component: Installation,
+      },
+    ],
+  },
+]);
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

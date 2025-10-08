@@ -145,7 +145,7 @@
   },
   {
     "id": 9,
-    "image": "https://images.unsplash.com/photo-1612831455543-b8b8b94997cd?w=500",
+    "image": "https://images.unsplash.com/photo-1593305841991-05c297ba4575?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Z2FtZXpvbmV8ZW58MHx8MHx8fDA%3D",
     "title": "GameZone",
     "companyName": "PlayVerse",
     "description": "Discover trending mobile games, join tournaments, and share gameplay videos.",
@@ -163,7 +163,7 @@
   },
   {
     "id": 10,
-    "image": "https://images.unsplash.com/photo-1587574293340-e0011c41e9de?w=500",
+    "image": "https://images.unsplash.com/photo-1532012197267-da84d127e765?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZWR1Y2F0aW9ufGVufDB8fDB8fHww",
     "title": "EduLink",
     "companyName": "BrightLearn",
     "description": "Interactive learning app with quizzes, video lectures, and skill certifications.",
@@ -181,7 +181,7 @@
   },
   {
     "id": 11,
-    "image": "https://images.unsplash.com/photo-1611605698232-6e3cf83a868c?w=500",
+    "image": "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG5vdGV8ZW58MHx8MHx8fDA%3D",
     "title": "NoteX",
     "companyName": "MindPad",
     "description": "Minimalist note app that syncs your ideas across devices instantly and securely.",
@@ -199,7 +199,7 @@
   },
   {
     "id": 12,
-    "image": "https://images.unsplash.com/photo-1611605698234-c8d9d5b54679?w=500",
+    "image": "https://plus.unsplash.com/premium_photo-1672759267829-17e48ef96660?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8d2FsbGV0fGVufDB8fDB8fHww",
     "title": "WalletPro",
     "companyName": "SafePay",
     "description": "Secure digital wallet for easy payments, bills, and money transfers worldwide.",
@@ -271,7 +271,7 @@
   },
   {
     "id": 16,
-    "image": "https://images.unsplash.com/photo-1551817956-fd41b9e8b50a?w=500",
+    "image": "https://images.unsplash.com/photo-1634128221889-82ed6efebfc3?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGFuZ3VhZ2V8ZW58MHx8MHx8fDA%3D",
     "title": "LangPro",
     "companyName": "LinguaTech",
     "description": "Language learning app with interactive lessons, speech recognition, and quizzes.",
@@ -307,7 +307,7 @@
   },
   {
     "id": 18,
-    "image": "https://images.unsplash.com/photo-1551817958-53d51b601d1d?w=500",
+    "image": "https://plus.unsplash.com/premium_photo-1700025062154-5852ab2908f9?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c2xlZXB8ZW58MHx8MHx8fDA%3D",
     "title": "SleepEase",
     "companyName": "ZenCore",
     "description": "Relaxation and sleep aid app with calming music, nature sounds, and sleep tracking.",
@@ -343,7 +343,7 @@
   },
   {
     "id": 20,
-    "image": "https://images.unsplash.com/photo-1612831455543-b8b8b94997cd?w=500",
+    "image": "https://plus.unsplash.com/premium_photo-1682705276681-58ee6e3bcab3?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bWluZHxlbnwwfHwwfHx8MA%3D%3D",
     "title": "MindZone",
     "companyName": "FocusLabs",
     "description": "Productivity app designed to boost focus, track habits, and reduce distractions.",

@@ -14,14 +14,20 @@ const Banner = () => {
             ideas into digital experiences that truly make an impact.
           </p>
           <div className="space-x-4">
-            <button className="btn bg-gradient-to-r from-orange-800 to-orange-400 text-white font-bold">
+            <a
+              href="https://play.google.com/store/games?hl=en"
+              className="btn bg-gradient-to-r from-orange-800 to-orange-400 text-white font-bold"
+            >
               <img className="w-5" src="/imges/googlePlay.svg" alt="" />
               Google Play
-            </button>
-            <button className="btn bg-gradient-to-r from-orange-800 to-orange-400 text-white font-bold">
+            </a>
+            <a
+              href="https://www.apple.com/app-store/"
+              className="btn bg-gradient-to-r from-orange-800 to-orange-400 text-white font-bold"
+            >
               <img className="w-5" src="/imges/appStore.svg" alt="" />
               App Store
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -34,19 +40,37 @@ const Banner = () => {
         </h2>
         <div className="px-0.5 flex justify-between items-center md:w-2/3 lg:w-2/3 mx-auto text-center">
           <div className="space-y-3">
-            <p className="text-gray-300 text-xs md:text-md lg:text-md">Total Downloads</p>
-            <strong className="text-xl md:text-3xl lg:text-5xl font-bold text-white">29.6M</strong>
-            <p className="text-gray-300  text-xs md:text-md lg:text-md">21% more than last month</p>
+            <p className="text-gray-300 text-xs md:text-md lg:text-md">
+              Total Downloads
+            </p>
+            <strong className="text-xl md:text-3xl lg:text-5xl font-bold text-white">
+              29.6M
+            </strong>
+            <p className="text-gray-300  text-xs md:text-md lg:text-md">
+              21% more than last month
+            </p>
           </div>
           <div className="space-y-3">
-            <p className="text-gray-300 text-xs md:text-md lg:text-md">Total Reviews</p>
-            <strong className="text-xl md:text-3xl lg:text-5xl font-bold text-white">906K</strong>
-            <p className="text-gray-300  text-xs md:text-md lg:text-md">46% more than last month</p>
+            <p className="text-gray-300 text-xs md:text-md lg:text-md">
+              Total Reviews
+            </p>
+            <strong className="text-xl md:text-3xl lg:text-5xl font-bold text-white">
+              906K
+            </strong>
+            <p className="text-gray-300  text-xs md:text-md lg:text-md">
+              46% more than last month
+            </p>
           </div>
           <div className="space-y-3">
-            <p className="text-gray-300 text-xs md:text-md lg:text-md">Active Apps</p>
-            <strong className="text-xl md:text-3xl lg:text-5xl font-bold text-white">132+</strong>
-            <p className="text-gray-300  text-xs md:text-md lg:text-md">31 more will Launch</p>
+            <p className="text-gray-300 text-xs md:text-md lg:text-md">
+              Active Apps
+            </p>
+            <strong className="text-xl md:text-3xl lg:text-5xl font-bold text-white">
+              132+
+            </strong>
+            <p className="text-gray-300  text-xs md:text-md lg:text-md">
+              31 more will Launch
+            </p>
           </div>
         </div>
       </div>
