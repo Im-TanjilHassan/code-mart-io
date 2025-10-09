@@ -1,23 +1,30 @@
-import React, { use, useState } from "react";
+import React, { use, useEffect, useState } from "react";
 import AppCard from "../home/appCard/AppCard";
 import { CiSearch } from "react-icons/ci";
+import Loading from "../loading/Loading";
 
 const Apps = ({ appsDataPromise }) => {
   const appData = use(appsDataPromise);
   const [apps, setApps] = useState(appData);
+  const [loading, setLoading] = useState(false);
+  const [searchText, setSearchText] = useState("");
 
-  const handleSearch = (e) => {
-    const inputValue = e.target.value;
+  useEffect(() => {
+    setLoading(true);
 
-    if (inputValue.length) {
-      const searchedApps = apps.filter((app) =>
-        app.title.toLowerCase().includes(inputValue.toLowerCase())
-      );
-      setApps(searchedApps);
-    } else {
-      setApps(appData);
-    }
-  };
+    setTimeout(() => {
+      if (searchText.trim() === "") {
+        setApps(appData);
+      } else {
+        const result = appData.filter((app) =>
+          app.title.toLowerCase().includes(searchText.toLowerCase())
+        );
+        setApps(result);
+      }
+
+      setLoading(false)
+    }, 200);
+  }, [searchText]);
 
   return (
     <div className="py-10 my-0 px-10">
@@ -34,22 +41,28 @@ const Apps = ({ appsDataPromise }) => {
           ({apps.length})Apps Found
         </p>
         <input
-          onChange={handleSearch}
+          // onChange={handleSearch}
+          value={searchText}
+          onChange={(e) => setSearchText(e.target.value)}
           type="text"
           className="border w-[12rem] lg:w-[20rem] px-10 py-1 rounded-xl relative"
           placeholder="Search"
         />
         <CiSearch className="absolute text-orange-600 font-bold right-50 lg:right-83" />
       </div>
-      {apps.length ? (
-        <div className="md:grid lg:grid grid-cols-4 gap-5 space-y-5 mb-8">
-          {apps.map((singleAppData) => (
-            <AppCard
-              key={singleAppData.id}
-              singleAppData={singleAppData}
-            ></AppCard>
-          ))}
-        </div>
+      {apps.length > 0 ? (
+        loading ? (
+          <Loading></Loading>
+        ) : (
+          <div className="md:grid lg:grid grid-cols-4 gap-5 space-y-5 mb-8">
+            {apps.map((singleAppData) => (
+              <AppCard
+                key={singleAppData.id}
+                singleAppData={singleAppData}
+              ></AppCard>
+            ))}
+          </div>
+        )
       ) : (
         <div className="w-full flex justify-center items-center">
           <div className="space-y-6 p-3">

@@ -1,10 +1,20 @@
-import { Outlet } from 'react-router'
-import './App.css'
-import Navbar from './components/navbar/Navbar'
-import Footer from './components/footer/Footer'
-import { ToastContainer } from 'react-toastify'
+import { Outlet, useLocation } from "react-router";
+import "./App.css";
+import Navbar from "./components/navbar/Navbar";
+import Footer from "./components/footer/Footer";
+import { ToastContainer } from "react-toastify";
+import { useEffect, useState } from "react";
+import Loading from "./components/loading/Loading";
 
 function App() {
+  const [loading, setLoading] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    setLoading(true);
+    const timer = setTimeout(() => setLoading(false), 200);
+    return () => clearTimeout(timer);
+  }, [location.pathname]);
 
   return (
     <>
@@ -12,12 +22,18 @@ function App() {
       <header>
         <Navbar></Navbar>
       </header>
-      <main>
-        <Outlet></Outlet>
-      </main>
-      <Footer></Footer>
+      {loading ? (
+        <Loading></Loading>
+      ) : (
+        <div>
+          <main>
+            <Outlet></Outlet>
+          </main>
+          <Footer></Footer>
+        </div>
+      )}
     </>
-  )
+  );
 }
 
-export default App
+export default App;
