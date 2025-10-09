@@ -2,9 +2,10 @@ import React, { use, useState } from "react";
 import { useParams } from "react-router";
 import RatingChart from "./ratingChart/RatingChart";
 import { toast } from "react-toastify";
+import { setInstallApp } from "../../utility/addTDb";
 
 const AppDetail = ({ appsDataPromise }) => {
-  const [installed, setInstalled] = useState(false);
+  const [isInstalled, setIsInstalled] = useState(false);
   const { id } = useParams();
   const allAppData = use(appsDataPromise);
   const singleAppData = allAppData.find(
@@ -20,12 +21,21 @@ const AppDetail = ({ appsDataPromise }) => {
     size,
     description,
     ratings,
-    } = singleAppData;
-    
-    const handleInstallBtn = () => {
-        setInstalled(true);
-        toast.success("App Installed Successfully")
+  } = singleAppData;
+
+  const handleInstallBtn = () => {
+    toast.success("App Installing...");
+    const appDataLC = {
+      id:id,
+      img: image,
+      title: title,
+      downloads: downloads,
+      ratingAvg: ratingAvg,
+      size: size
     }
+    setInstallApp(appDataLC, setIsInstalled)
+  };
+  
 
   return (
     <div className="mb-20 px-2 md:px-7 lg:px-10 space-y-10">
@@ -73,7 +83,7 @@ const AppDetail = ({ appsDataPromise }) => {
                 <p className="text-2xl font-bold">{reviews}K</p>
               </div>
             </div>
-            {installed ? (
+            {isInstalled ? (
               <button
                 disabled
                 className="btn bg-gradient-to-r from-orange-800 to-orange-400 text-white font-bold"
