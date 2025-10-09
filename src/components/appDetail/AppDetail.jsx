@@ -1,5 +1,5 @@
-import React, { use, useState } from "react";
-import { useParams } from "react-router";
+import React, { use, useEffect, useState } from "react";
+import { Link, useParams } from "react-router";
 import RatingChart from "./ratingChart/RatingChart";
 import { toast } from "react-toastify";
 import { setInstallApp } from "../../utility/addTDb";
@@ -11,6 +11,35 @@ const AppDetail = ({ appsDataPromise }) => {
   const singleAppData = allAppData.find(
     (appData) => appData.id === parseInt(id)
   );
+
+  
+  useEffect(() => {
+    const getAppData = JSON.parse(localStorage.getItem("installedApp")) || [];
+    const storedApp = getAppData.some((app) => app.id === id);
+    setIsInstalled(storedApp);
+  }, [id]);
+
+  if (!singleAppData) {
+    return (
+      <div className="w-full flex justify-center items-center py-5">
+        <div className="space-y-6 p-3 text-center">
+          <img src="/imges/App-Error.png" className="w-64 mx-auto" alt="" />
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">OPPS!!! NO APP FOUND</h2>
+          <p className="text-gray-500">
+            The App you are requesting is not found on our system. please try
+            another apps
+          </p>
+          <Link
+            to="/apps"
+            className="inline-block mt-4 px-6 py-2 bg-gradient-to-r from-orange-800 to-orange-400 hover:bg-orange-700 text-white rounded-lg font-medium transition-all"
+          >
+            Go Back
+          </Link>
+        </div>
+      </div>
+    );
+  }
+
   const {
     image,
     title,
@@ -24,7 +53,7 @@ const AppDetail = ({ appsDataPromise }) => {
   } = singleAppData;
 
   const handleInstallBtn = () => {
-    toast.success("App Installing...");
+    toast.success("App Installing successfully!!!");
     const appDataLC = {
       id:id,
       img: image,
@@ -33,9 +62,10 @@ const AppDetail = ({ appsDataPromise }) => {
       ratingAvg: ratingAvg,
       size: size
     }
-    setInstallApp(appDataLC, setIsInstalled)
+    setInstallApp(appDataLC)
+    setIsInstalled(true);
+    
   };
-  
 
   return (
     <div className="mb-20 px-2 md:px-7 lg:px-10 space-y-10">

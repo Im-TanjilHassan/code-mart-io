@@ -2,9 +2,9 @@ import React from "react";
 
 const InstalledApp = ({ app, handleUninstall }) => {
   return (
-    <div className="flex justify-between items-center bg-gray-200 p-4 rounded-xl">
+    <div className="md:flex lg:flex justify-between items-center space-y-3 md:space-y-0 lg:space-y-0 bg-gray-200 p-4 rounded-xl">
       <div className="flex gap-5">
-        <img src={app.img} className="w-[5rem] h-[5rem] rounded-xl" alt="" />
+        <img src={app.img} className="w-[6rem] h-[6rem] rounded-xl" alt="" />
         <div className="space-y-6">
           <h2 className="font-bold text-lg">{app.title}</h2>
           <div className="flex justify-between items-center gap-5">
@@ -30,7 +30,7 @@ const InstalledApp = ({ app, handleUninstall }) => {
       </div>
       <button
         onClick={() => handleUninstall(app.id)}
-        className="btn bg-gradient-to-r from-orange-800 to-orange-400 text-white font-bold"
+        className="w-full md:w-auto lg:w-auto btn bg-gradient-to-r from-orange-800 to-orange-400 text-white font-bold"
       >
         Uninstall
       </button>

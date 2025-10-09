@@ -8,6 +8,7 @@ import Apps from './components/apps/Apps.jsx'
 import Installation from './components/installation/Installation.jsx'
 import AppDetail from './components/appDetail/AppDetail.jsx'
 import "react-toastify/dist/ReactToastify.css";
+import ErrorPage from './components/errorPage/ErrorPage.jsx'
 
 
 const appsDataPromise = fetch("/appData.json").then(res => res.json())
@@ -49,6 +50,10 @@ const router = createBrowserRouter([
       },
     ],
   },
+  {
+    path: "*",
+    Component: ErrorPage
+  }
 ]);
 
 createRoot(document.getElementById('root')).render(
