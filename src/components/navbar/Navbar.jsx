@@ -108,7 +108,7 @@ const Navbar = () => {
       </div>
       <div className="navbar-end">
         <a
-          href="https://github.com/Im-TanjilHassan/code-mart-io"
+          href="https://github.com/Im-TanjilHassan"
           className="btn text-[1rem] bg-gradient-to-r from-orange-800 to-orange-400 text-white font-bold"
         >
           <FaGithub /> Contribute

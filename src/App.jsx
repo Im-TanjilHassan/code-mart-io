@@ -2,7 +2,6 @@ import { Outlet, useLocation } from "react-router";
 import "./App.css";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
-import { ToastContainer } from "react-toastify";
 import { useEffect, useState } from "react";
 import Loading from "./components/loading/Loading";
 
@@ -18,7 +17,6 @@ function App() {
 
   return (
     <>
-      <ToastContainer></ToastContainer>
       <header>
         <Navbar></Navbar>
       </header>

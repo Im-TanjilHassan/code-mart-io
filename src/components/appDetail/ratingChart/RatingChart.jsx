@@ -4,7 +4,7 @@ const RatingChart = ({ ratings }) => {
     return (
       <div className="bg-white rounded-xl shadow-md">
         <h2 className="text-2xl font-bold mb-4">Ratings</h2>
-        <ResponsiveContainer width="100%" height={300} className="border">
+        <ResponsiveContainer width="100%" height={300}>
           <BarChart
             layout="vertical"
             data={ratings}

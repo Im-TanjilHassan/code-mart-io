@@ -7,7 +7,6 @@ import Home from './components/home/Home.jsx'
 import Apps from './components/apps/Apps.jsx'
 import Installation from './components/installation/Installation.jsx'
 import AppDetail from './components/appDetail/AppDetail.jsx'
-import "react-toastify/dist/ReactToastify.css";
 import ErrorPage from './components/errorPage/ErrorPage.jsx'
 
 
@@ -20,13 +19,11 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        loader: () => fetch("appData.json"),
         element: (
           <Suspense fallback="Loading ...">
             <Home appsDataPromise={appsDataPromise}></Home>
           </Suspense>
         ),
-        // Component: Home
       },
       {
         path: "/apps",

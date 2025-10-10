@@ -1,8 +1,9 @@
 import React, { use, useEffect, useState } from "react";
 import { Link, useParams } from "react-router";
 import RatingChart from "./ratingChart/RatingChart";
-import { toast } from "react-toastify";
 import { setInstallApp } from "../../utility/addTDb";
+import Swal from "sweetalert2";
+
 
 const AppDetail = ({ appsDataPromise }) => {
   const [isInstalled, setIsInstalled] = useState(false);
@@ -53,18 +54,33 @@ const AppDetail = ({ appsDataPromise }) => {
   } = singleAppData;
 
   const handleInstallBtn = () => {
-    toast.success("App Installing successfully!!!");
-    const appDataLC = {
-      id:id,
-      img: image,
-      title: title,
-      downloads: downloads,
-      ratingAvg: ratingAvg,
-      size: size
-    }
-    setInstallApp(appDataLC)
-    setIsInstalled(true);
-    
+    Swal.fire({
+      title: "Are you sure?",
+      text: "You won't be able to revert this!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, install it!",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire({
+          title: "Installed!",
+          text: "Your App has been Installed.",
+          icon: "success",
+        });
+        const appDataLC = {
+          id: id,
+          img: image,
+          title: title,
+          downloads: downloads,
+          ratingAvg: ratingAvg,
+          size: size,
+        };
+        setInstallApp(appDataLC);
+        setIsInstalled(true);
+      }
+    });
   };
 
   return (

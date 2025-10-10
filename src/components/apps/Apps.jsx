@@ -41,7 +41,6 @@ const Apps = ({ appsDataPromise }) => {
           ({apps.length})Apps Found
         </p>
         <input
-          // onChange={handleSearch}
           value={searchText}
           onChange={(e) => setSearchText(e.target.value)}
           type="text"
@@ -64,7 +63,7 @@ const Apps = ({ appsDataPromise }) => {
           </div>
         )
       ) : (
-        <div className="w-full flex justify-center items-center">
+        <div className="w-full text-center flex justify-center items-center">
           <div className="space-y-6 p-3">
             <img src="/imges/App-Error.png" className="w-sm mx-auto" alt="" />
             <h2 className="text-5xl font-bold">OPPS!!! NO APP FOUND</h2>
